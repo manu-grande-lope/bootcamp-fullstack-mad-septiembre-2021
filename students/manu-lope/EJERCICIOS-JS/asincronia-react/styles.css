@@ -1,0 +1,18 @@
+
+
+.react__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.div__style {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    padding: 20px;
+
+}
