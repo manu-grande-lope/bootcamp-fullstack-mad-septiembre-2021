@@ -1,0 +1,13 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.card__style {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    max-width: 300px;
+    max-height: 300px;
+}
