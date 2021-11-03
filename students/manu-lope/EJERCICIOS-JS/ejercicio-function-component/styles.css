@@ -11,3 +11,13 @@
     max-width: 300px;
     max-height: 300px;
 }
+
+.card__style--ul{
+    background-color: blanchedalmond;
+
+}
+
+.card__style--ul-li{
+    background-color: brown;
+}
+

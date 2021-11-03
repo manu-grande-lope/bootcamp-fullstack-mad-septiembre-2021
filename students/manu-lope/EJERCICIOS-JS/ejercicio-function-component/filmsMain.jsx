@@ -1,12 +1,11 @@
 
 function FilmsMain() {
 
-    useEffect(() => {
+    React.useEffect(() => {
         fetch("https://swapi.dev/api/films/?format=json")
-            .then(r = r.json())
+            .then(r => r.json())
             .then(r = data)
-    });
-    console.log(data)
+    }, []);
 
     return <React.Fragment>
         <FilmsCard title={data.results.title}></FilmsCard>,
