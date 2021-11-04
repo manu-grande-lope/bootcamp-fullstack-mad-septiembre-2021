@@ -4,7 +4,6 @@ function App() {
         <ReactRouterDOM.BrowserRouter>
             <Header></Header>
             <ReactRouterDOM.Switch>
-            
                 <ReactRouterDOM.Route path="/SignUp">
                     <SignUp></SignUp>
                 </ReactRouterDOM.Route>
@@ -20,7 +19,6 @@ function App() {
                 <ReactRouterDOM.Route path="*">
                     <LandingApp></LandingApp>
                 </ReactRouterDOM.Route>
-
             </ReactRouterDOM.Switch>
             <Footer></Footer>
         </ReactRouterDOM.BrowserRouter>
