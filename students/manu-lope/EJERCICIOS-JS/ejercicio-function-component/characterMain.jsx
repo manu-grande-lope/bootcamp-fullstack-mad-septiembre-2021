@@ -1,18 +1,19 @@
 
 function CharacterMain() {
-
+    const [characters, setCharacters] = React.useState([]);
     React.useEffect(() => {
-        fetch("https://swapi.dev/api/people/?format=json")
-            .then(r => r.json())
-            .then(d => data)
-    },[]);
-    console.log(data)
+
+        for (let i = 1; i <= 82; i++) {
+            fetch(`https://swapi.dev/api/people/${i}`)
+                .then(r => r.json())
+                .then(d => setCharacters(oldValue => oldValue.concat([d])))
+        }
+    }, []);
 
     return <React.Fragment>
-        <CharacterCard name={data.results.name}></CharacterCard>
-        <CharacterCard eye_color={data.results.eye_color}></CharacterCard>
-        <CharacterCard birth_date={data.results.birth_date}></CharacterCard>
-        <CharacterCard gender={data.results.gender}></CharacterCard>
-        </React.Fragment>
-    
+        <ul>
+            {characters.map((c, i) => <CharacterCard key={i} people={c}></CharacterCard>)}
+        </ul>
+    </React.Fragment>
+
 }

@@ -3,7 +3,6 @@ function App() {
 
     return <React.Fragment>
         <CharacterMain></CharacterMain>
-        <FilmsMain></FilmsMain>
     </React.Fragment>
 
 }

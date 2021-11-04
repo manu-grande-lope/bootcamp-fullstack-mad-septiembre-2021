@@ -5,15 +5,14 @@
 function CharacterCard(props) {
 
     return <React.Fragment>
-        <div className="card__style">
-            <ul className="card__style--ul">
-                <li className="card__style--ul-li">{props.name}</li>
-                <li className="card__style--ul-li">{props.eye_color}</li>
-                <li className="card__style--ul-li">{props.birth_year}</li>
-                <li className="card__style--ul-li">{props.gender}</li>
-            </ul>
-
-        </div>
+            <div className="card__style">
+                <ul className="card__style--ul">
+                    <li className="card__style--ul-li"><h1>{props.people.name}</h1></li>
+                    <li className="card__style--ul-li">{props.people.eye_color}</li>
+                    <li className="card__style--ul-li">{props.people.birth_year}</li>
+                    <li className="card__style--ul-li">{props.people.gender}</li>
+                </ul>
+            </div>
     </React.Fragment>
 
 }
