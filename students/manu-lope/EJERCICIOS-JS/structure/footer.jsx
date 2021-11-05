@@ -2,5 +2,7 @@ function Footer(){
 
 
     
-    return <h1>ESTO ES EL FOOTER</h1>
+    return (
+        <footer className="footer__style">lo footer</footer>
+    )
 }

@@ -1,3 +1,3 @@
 function HomeApp(){
-    return <p>Soy Home</p>
+    return <p>Hola máquina, titán.</p>
 }

@@ -13,9 +13,6 @@ function App() {
                 <ReactRouterDOM.Route path="/Home">
                     <HomeApp></HomeApp>
                 </ReactRouterDOM.Route>
-                <ReactRouterDOM.Route path="/">
-                    <LandingApp></LandingApp>
-                </ReactRouterDOM.Route>
                 <ReactRouterDOM.Route path="*">
                     <LandingApp></LandingApp>
                 </ReactRouterDOM.Route>
